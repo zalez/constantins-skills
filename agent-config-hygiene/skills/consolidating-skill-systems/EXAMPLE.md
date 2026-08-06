@@ -15,10 +15,20 @@ Over 100 skills once combined. Three claimed "something is broken"; two claimed
 
 ## 1. Inventory
 
-The skill listing summed to **~9,000 estimated tokens against a ~2,000 budget** —
-4.5× over, so entries were being truncated before any conflict was reached. That
-reframed the job: the routing block was not only settling arguments, it was
-compensating for a listing too large to be read reliably.
+The skill listing summed to **~9,000 estimated tokens**, against a budget of
+roughly 1% of the context window.
+
+That first estimate of the budget was wrong by 5×: it assumed a 200k window on a
+harness that had 1M, turning "comfortably at budget" into "4.5× over" and briefly
+reframing the whole exercise around a crisis that did not exist. Two lessons,
+both cheap:
+
+- **Read the budget from the harness, not from memory.** `/context` reports the
+  listing's share of the window directly. One command would have caught it.
+- **Ask the overflow question anyway.** It simply was not the finding here. The
+  real cost sat in memory files at more than four times the listing — visible on
+  the line above it in the same output, and missed for a whole session because
+  nobody looked.
 
 ## 2. Mutability
 
@@ -78,12 +88,17 @@ around behaviourally and kept costing their descriptions.
 
 The 15 unused skills that *were* in the user's own directory could be turned off
 mechanically, and that is where the listing actually shrank: ~9,000 → ~6,800 est.
-tokens. Still over budget, because the largest block belonged to a system whose
-usage counters had just been reset by the rename — an honest "not yet judgeable"
-rather than a clean result.
+tokens. The justification was disuse — one invocation across 186 sessions — not
+the budget emergency step 1 had wrongly diagnosed. Right call, wrong reason
+attached to it at the time.
 
-The lesson the table alone would have hidden: settling every contest left the
-listing exactly as bloated as before.
+The largest remaining block belonged to a system whose usage counters the rename
+had just reset, leaving it honestly "not yet judgeable" rather than cleanly
+resolved.
+
+The lesson the table alone would have hidden, and which stands whether or not the
+listing is near its budget: **settling every contest changes context load not at
+all.** Routing and cost are separate problems that happen to share a table.
 
 ## 7. Routing block
 
