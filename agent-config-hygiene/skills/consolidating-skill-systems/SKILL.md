@@ -39,6 +39,12 @@ whether the summed descriptions overflow the skill-listing budget (roughly 1% of
 the context window). An overflowing listing gets truncated, and truncation
 degrades routing on its own, before any conflict does.
 
+**Read that budget from the harness, never from memory.** Claude Code's
+`/context` reports the listing's share of the window directly; other harnesses
+have an equivalent. Assuming a window size is how a listing comfortably at budget
+gets misread as five times over it. Read the whole breakdown while you are there:
+the larger cost usually sits elsewhere, most often in the instruction files.
+
 ## 2. Classify each source by mutability
 
 This decides the treatment, so do it before deciding anything else.
