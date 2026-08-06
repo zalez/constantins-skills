@@ -1,0 +1,25 @@
+{
+  "name": "constantins-skills",
+  "description": "Constantin Gonzalez's Claude Code skills",
+  "owner": {
+    "name": "Constantin Gonzalez",
+    "email": "constantin@glez.de"
+  },
+  "plugins": [
+    {
+      "name": "agent-config-hygiene",
+      "description": "Keep agent configuration honest: route competing skill systems, and find config that stopped being true",
+      "version": "0.1.0",
+      "source": "./agent-config-hygiene",
+      "author": { "name": "Constantin Gonzalez", "email": "constantin@glez.de" }
+    },
+    {
+      "name": "prompting",
+      "description": "Turn rough ideas into well-structured, portable AI prompts",
+      "version": "0.1.0",
+      "source": "./prompting",
+      "author": { "name": "Constantin Gonzalez", "email": "constantin@glez.de" }
+    }
+  ],
+  "version": "0.1.0"
+}

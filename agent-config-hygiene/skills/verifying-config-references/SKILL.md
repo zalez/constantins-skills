@@ -1,5 +1,6 @@
 ---
 name: verifying-config-references
+license: BSD-3-Clause
 description: Checks whether the tools and names your agent config asserts still exist. Use after uninstalling or renaming a tool, plugin, or skill set; when a command or import named in config turns out to be missing; or when a list of names in CLAUDE.md or AGENTS.md may no longer match what it enumerates. For unused skills, slow hooks, invalid settings, or installation health, run /doctor instead.
 ---
 

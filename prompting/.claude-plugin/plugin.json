@@ -1,0 +1,10 @@
+{
+  "name": "prompting",
+  "description": "Turn rough ideas into well-structured, portable AI prompts",
+  "version": "0.1.0",
+  "author": { "name": "Constantin Gonzalez", "email": "constantin@glez.de" },
+  "homepage": "https://github.com/zalez/constantins-skills",
+  "repository": "https://github.com/zalez/constantins-skills",
+  "license": "BSD-3-Clause",
+  "keywords": ["skills", "claude-code", "prompting", "delegation"]
+}

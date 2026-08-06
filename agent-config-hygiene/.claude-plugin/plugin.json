@@ -1,0 +1,10 @@
+{
+  "name": "agent-config-hygiene",
+  "description": "Keep agent configuration honest: route competing skill systems, and find config that stopped being true",
+  "version": "0.1.0",
+  "author": { "name": "Constantin Gonzalez", "email": "constantin@glez.de" },
+  "homepage": "https://github.com/zalez/constantins-skills",
+  "repository": "https://github.com/zalez/constantins-skills",
+  "license": "BSD-3-Clause",
+  "keywords": ["skills", "claude-code", "configuration", "routing", "maintenance"]
+}

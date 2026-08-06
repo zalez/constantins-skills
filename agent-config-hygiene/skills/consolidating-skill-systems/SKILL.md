@@ -1,5 +1,6 @@
 ---
 name: consolidating-skill-systems
+license: BSD-3-Clause
 description: Consolidate several installed skill sets into one, by routing rather than merging.
 disable-model-invocation: true
 ---
