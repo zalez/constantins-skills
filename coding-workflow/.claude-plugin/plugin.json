@@ -1,0 +1,10 @@
+{
+  "name": "coding-workflow",
+  "description": "Lean plan-and-execute workflow for strong models: plans record decisions, fresh subagents implement, review scales with risk, one independent final review",
+  "version": "0.1.0",
+  "author": { "name": "Constantin Gonzalez", "email": "constantin@glez.de" },
+  "homepage": "https://github.com/zalez/constantins-skills",
+  "repository": "https://github.com/zalez/constantins-skills",
+  "license": "MIT",
+  "keywords": ["skills", "claude-code", "planning", "subagents", "code-review"]
+}
